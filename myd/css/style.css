@@ -1,0 +1,144 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+* {
+    border: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper-full {
+    width: 100%;
+    background: #1bd1c8;
+    height: 70px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 300px;
+    float: left;
+    height: 70px;
+}
+
+.container {
+    width: 700px;
+    float: left;
+    height: 70px;
+    padding: 0;
+}
+
+.container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.container a {
+    display: block;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: aliceblue;
+}
+
+.container a:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+.sahan {
+    position: absolute;
+    list-style: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sahan li {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    opacity: 1;
+    transition: all 2.5sec ease;
+}
+
+.sahan .hidden li:last-child {
+    margin-right: 0;
+}
+
+.sahan .hidden li:nth-child(1) {
+    transform: translate(-330px, 300px);
+}
+
+.sahan .hidden li:nth-child(2) {
+    transform: translate(400px, -280px);
+}
+
+.sahan .hidden li:nth-child(3) {
+    transform: translate(400px, -280px);
+}
+
+.sahan .hidden li:nth-child(4) {
+    transform: translate(300px, -280px);
+}
+
+.sahan .hidden li:nth-child(5) {
+    transform: translate(-300px, 280px);
+}
+
+.sahan .hidden li:nth-child(6) {
+    transform: translate(380px, -230px);
+}
+
+.sahan .hidden li:nth-child(7) {
+    transform: translate(-350px, 250px);
+}
+
+.sahan .hidden li:nth-child(8) {
+    transform: translate(300px, -200px);
+}
+
+.sahan .hidden li:nth-child(9) {
+    transform: translate(370px, -400px);
+}
+
+.sahan .hidden li:nth-child(10) {
+    transform: translate(250px, -250px);
+}
+
+.sahan .hidden li:nth-child(11) {
+    transform: translate(220px, -220px);
+}
+
+.sahan .hidden li:nth-child(12) {
+    transform: translate(200px, 400px);
+}
+
+.sahan .hidden li {
+    opacity: 0;
+}

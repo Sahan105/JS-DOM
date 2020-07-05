@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- booostrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-1">
+        <h1>Age Calculator</h1>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-danger btn-block btn-lg" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-block btn-info btn-lg" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-2">
+        <h1>Cat photo jenarator</h1>
+        <button type="submit" class="btn btn-success " onclick="generateCate()" id="cat-generator">Genarate Cat</button>
+        <div class="flex-box-container-2" id="cat-gen">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h1>Rock, Paper, Scissor</h1>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="/images/rock-clipart-you-rock-md.png" height="150" width="150" onclick="rpsGame(this)" id="rock">
+            <img src="/images/6740598.png" id="paper" height="150" width="150" onclick="rpsGame(this)">
+            <img src="/images/1-5-fingers-clipart.png" id="scissor" height="150" width="150" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <!-- Javascript main file link -->
+    <script src="/main.js"></script>
+</body>
+
+
+</html>
